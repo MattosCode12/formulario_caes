@@ -52,4 +52,22 @@ form.addEventListener("submit", function(e) {
     if (telefone.match(/[a-zA-Z]/)) {
         alert("Telefone inválido");
     }
+
+    resultado.innerHTML = `
+    <h3>Dados Enviados:</h3>
+    Nome: ${nome} <br>
+    Email: ${email} <br>
+    Telefone: ${telefone} <br>
+    CPF: ${cpf} <br>
+    Idade: ${idade} <br>
+    Cidade: ${cidade} <br>
+    Moradia: ${moradia} <br>
+    Quintal: ${quintal} <br>
+    Pet: ${pet} <br>
+    Horas: ${horas} <br>
+    Motivo: ${motivo}
+    `;
+
+    cpfsCadastrados.push(cpf);
+    
 });
