@@ -1,0 +1,31 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    background: #faefef;
+}
+
+form{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+button{
+    padding: 10px;
+    background: #e4b34a;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input, select, textarea{
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
+}
+
+.error{
+    color: red;
+}
