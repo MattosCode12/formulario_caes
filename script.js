@@ -32,4 +32,24 @@ form.addEventListener("submit", function(e) {
     if (horas === "" || isNaN(horas)) return alert("Horas inválidas");
     if (motivo.lenght <10) return alert("O motivo está muito curto");
     if (!termo) return alert("Aceite o termo");
+
+    if (moradia === "apartamento" && quintal === "sim") {
+        alert("Apartamento não pode ter quintal");
+    }
+
+    if (horas >8) {
+        alert("Animal irá ficar muito tempo sozinho!");
+    }
+
+    if (pet === "nao") {
+        alert("a ONG poderá acompanhar a sua trajetória com o pet");
+    }
+
+    if (motivo === "quero" || motivo === "porque sim") {
+        alert("Motivo inválido");
+    }
+
+    if (telefone.match(/[a-zA-Z]/)) {
+        alert("Telefone inválido");
+    }
 });
